@@ -22,5 +22,8 @@ class TestCalcul(unittest.TestCase):
         answer = 'Четное'
         self.assertEqual(even_odd_int(0), answer, 'Ошибка!')
 
+    def test_list_range_zero(self):
+        self.assertEqual(list_range(0), [])
+
 
 unittest.main()
